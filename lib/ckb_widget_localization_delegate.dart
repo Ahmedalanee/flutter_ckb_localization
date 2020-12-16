@@ -11,11 +11,11 @@ class _CkbMaterialLocalizationsDelegate
   const _CkbMaterialLocalizationsDelegate();
 
   @override
-  bool isSupported(Locale locale) => locale.languageCode == 'ckb';
+  bool isSupported(Locale locale) => locale.languageCode == 'ku';
 
   @override
   Future<WidgetsLocalizations> load(Locale locale) async {
-    const String localeName = "ckb";
+    const String localeName = "ku";
     await intl.initializeDateFormatting(localeName, null);
     return SynchronousFuture<WidgetsLocalizations>(
       CkbWidgetLocalizations(),
