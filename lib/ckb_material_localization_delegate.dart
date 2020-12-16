@@ -10,13 +10,13 @@ class _CkbMaterialLocalizationsDelegate
   const _CkbMaterialLocalizationsDelegate();
 
   @override
-  bool isSupported(Locale locale) => locale.languageCode == 'ckb';
+  bool isSupported(Locale locale) => locale.languageCode == 'ku';
 
   @override
   Future<MaterialLocalizations> load(Locale locale) async {
     return SynchronousFuture<MaterialLocalizations>(
       CkbMaterialLocalizations(
-        localeName: "ckb",
+        localeName: "ku",
         fullYearFormat: intl.DateFormat('y'),
         shortDateFormat: intl.DateFormat('MM/DD/YY'),
         compactDateFormat: intl.DateFormat('EEE, MMM d'),
@@ -36,7 +36,7 @@ class _CkbMaterialLocalizationsDelegate
 
 class CkbMaterialLocalizations extends GlobalMaterialLocalizations {
   const CkbMaterialLocalizations({
-    String localeName = 'ckb',
+    String localeName = 'ku',
     @required intl.DateFormat fullYearFormat,
     @required intl.DateFormat shortDateFormat,
     @required intl.DateFormat compactDateFormat,
